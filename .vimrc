@@ -100,6 +100,7 @@ Plug 'vim-scripts/gitignore'
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'int3/vim-extradite'
+Plug 'airblade/vim-gitgutter'
 
 " Bars, panels, and files
 Plug 'scrooloose/nerdtree'
@@ -109,11 +110,13 @@ Plug 'majutsushi/tagbar'
 
 " Text manipulation
 Plug 'vim-scripts/Align'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'simnalamburt/vim-mundo'
 Plug 'tpope/vim-commentary'
 Plug 'godlygeek/tabular'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'easymotion/vim-easymotion'
+Plug 'tpope/vim-abolish'
 
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
@@ -128,6 +131,7 @@ Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
 " Colorscheme
 Plug 'vim-scripts/wombat256.vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Custom bundles
 
@@ -217,7 +221,8 @@ set mouse=a
 " Colors and Fonts {{{
 
 try
-  colorscheme wombat256mod
+  colorscheme solarized
+  set background=dark
 catch
 endtry
 
@@ -511,6 +516,8 @@ endfunction
 nmap <silent> <leader>f <ESC>:call ToggleFindNerd()<CR>
 nmap <silent> <leader>F <ESC>:NERDTreeToggle<CR>
 
+let NERDTreeShowHidden=1
+
 " }}}
 
 " Alignment {{{
@@ -720,3 +727,4 @@ if filereadable(hvn_config_post)
 endif
 
 " }}}
+

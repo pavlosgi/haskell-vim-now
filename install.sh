@@ -57,8 +57,9 @@ install() {
   else
     warn "No previous installations detected."
     msg "Installing Haskell-Vim-Now..."
-    git clone https://github.com/begriffs/haskell-vim-now.git ${HVN_DEST}
-
+    git clone https://github.com/pavlosgi/haskell-vim-now.git ${HVN_DEST}
+    pushd ${HVN_DEST} && git checkout feature/vim-config && popd
+    
     return 0
   fi
 
