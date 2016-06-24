@@ -621,6 +621,11 @@ nmap <leader>gd :Gdiff<CR>
 nmap <leader>gv :Gvdiff<CR>
 nmap <leader>gb :Gblame<CR>
 
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+nmap <Leader>ha <Plug>GitGutterStageHunk
+nmap <Leader>hr <Plug>GitGutterUndoHunk
+
 function! CommittedFiles()
   " Clear quickfix list
   let qf_list = []
