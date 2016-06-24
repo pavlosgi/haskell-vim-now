@@ -133,6 +133,9 @@ Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 Plug 'vim-scripts/wombat256.vim'
 Plug 'altercation/vim-colors-solarized'
 
+" Shortcuts
+Plug 'tpope/vim-unimpaired'
+
 " Custom bundles
 
 if filereadable(hvn_user_plugins)
