@@ -618,6 +618,7 @@ nmap <leader>gs :Gstatus<CR>
 nmap <leader>gg :copen<CR>:GGrep 
 nmap <leader>gl :Extradite!<CR>
 nmap <leader>gd :Gdiff<CR>
+nmap <leader>gv :Gvdiff<CR>
 nmap <leader>gb :Gblame<CR>
 
 function! CommittedFiles()
