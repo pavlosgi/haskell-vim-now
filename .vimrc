@@ -98,6 +98,7 @@ Plug 'int3/vim-extradite'
 
 " Bars, panels, and files
 Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-airline/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'majutsushi/tagbar'
@@ -480,23 +481,24 @@ nmap <silent> <Leader>rv <Plug>SetTmuxVars
 " NERDTree {{{
 
 " Close nerdtree after a file is selected
-let NERDTreeQuitOnOpen = 1
+" let NERDTreeQuitOnOpen = 1
+let g:nerdtree_tabs_open_on_console_startup = 2
 
-function! IsNERDTreeOpen()
-  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
-endfunction
+"function! IsNERDTreeOpen()
+"  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
+"endfunction
 
-function! ToggleFindNerd()
-  if IsNERDTreeOpen()
-    exec ':NERDTreeToggle'
-  else
-    exec ':NERDTreeFind'
-  endif
-endfunction
+"function! ToggleFindNerd()
+"  if IsNERDTreeOpen()
+"    exec ':NERDTreeTabsToggle'
+"  else
+"    exec ':NERDTreeTabsFind'
+"  endif
+"endfunction
 
 " If nerd tree is closed, find current file, if open, close it
-nmap <silent> <leader>f <ESC>:call ToggleFindNerd()<CR>
-nmap <silent> <leader>F <ESC>:NERDTreeToggle<CR>
+nmap <silent> <leader>f <ESC>:NERDTreeTabsToggle<CR>
+nmap <silent> <leader>F <ESC>:NERDTreeTabsToggle<CR>
 
 " }}}
 
