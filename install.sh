@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 PROGNAME=$(basename $0)
-DEFAULT_REPO="https://github.com/begriffs/haskell-vim-now.git"
+DEFAULT_REPO="https://github.com/pavlosgi/haskell-vim-now.git"
 
 if which tput >/dev/null 2>&1; then
     ncolors=$(tput colors)

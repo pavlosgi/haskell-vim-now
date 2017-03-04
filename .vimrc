@@ -117,13 +117,15 @@ Plug 'christoomey/vim-tmux-navigator'
 " Haskell
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'enomsg/vim-haskellConcealPlus', { 'for': 'haskell' }
-Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
+Plug 'bitc/vim-hdevtools', { 'for': 'haskell' }
+Plug 'nbouscal/vim-stylish-haskell', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
 " Colorscheme
 Plug 'vim-scripts/wombat256.vim'
+Plug 'altercation/vim-colors-solarized'
 
 " Custom bundles
 
@@ -219,7 +221,8 @@ endif
 " Colors and Fonts {{{
 
 try
-  colorscheme wombat256mod
+  set background=dark
+  colorscheme solarized
 catch
 endtry
 
