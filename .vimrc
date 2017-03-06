@@ -91,10 +91,12 @@ Plug 'benekastah/neomake'
 Plug 'moll/vim-bbye'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'vim-scripts/gitignore'
+Plug 'easymotion/vim-easymotion'
 
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'int3/vim-extradite'
+Plug 'airblade/vim-gitgutter'
 
 " Bars, panels, and files
 Plug 'scrooloose/nerdtree'
@@ -113,6 +115,14 @@ Plug 'easymotion/vim-easymotion'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
+Plug 'scrooloose/nerdcommenter'
+Plug 'valloric/youcompleteme'
+Plug 'ervandew/supertab'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-repeat'
+Plug 'mattn/emmet-vim'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-jdaddy'
 
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
