@@ -133,9 +133,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'enomsg/vim-haskellConcealPlus', { 'for': 'haskell' }
 Plug 'bitc/vim-hdevtools', { 'for': 'haskell' }
-Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'nbouscal/vim-stylish-haskell', { 'for': 'haskell' }
 Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
+Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
 
@@ -513,7 +513,7 @@ let g:nerdtree_tabs_open_on_console_startup = 2
 
 " If nerd tree is closed, find current file, if open, close it
 nmap <silent> <leader>f <ESC>:NERDTreeTabsToggle<CR>
-nmap <silent> <leader>F <ESC>:NERDTreeTabsToggle<CR>
+nmap <silent> <leader>F <ESC>:NERDTreeTabsFind<CR>
 
 " }}}
 
