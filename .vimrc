@@ -124,7 +124,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-jdaddy'
 Plug 'elzr/vim-json'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 
 " Allow pane movement to jump out of vim into tmux
 Plug 'christoomey/vim-tmux-navigator'
