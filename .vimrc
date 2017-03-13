@@ -348,6 +348,7 @@ vmap <leader>d "*d
 nmap <leader>p "*p
 vmap <leader>p "*p
 
+set colorcolumn=80
 " }}}
 
 " Visual mode related {{{
