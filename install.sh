@@ -169,3 +169,6 @@ done
 
 test -n "$HVN_REPO" || usage
 main $HVN_REPO $HVN_INSTALL_BASIC
+
+git clone git@github.com:powerline/fonts.git /tmp/fonts
+/tmp/fonts/install.sh
