@@ -117,7 +117,7 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdcommenter'
-" Plug 'valloric/youcompleteme'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
 Plug 'ervandew/supertab'
 Plug 'honza/vim-snippets'
 Plug 'tpope/vim-repeat'
@@ -125,6 +125,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-jdaddy'
 Plug 'elzr/vim-json'
+Plug 'justinmk/vim-sneak'
 " Plug 'vim-syntastic/syntastic'
 
 " Allow pane movement to jump out of vim into tmux
@@ -139,6 +140,12 @@ Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 Plug 'eagletmt/ghcmod-vim', { 'for': 'haskell' }
 Plug 'Twinside/vim-hoogle', { 'for': 'haskell' }
 Plug 'mpickering/hlint-refactor-vim', { 'for': 'haskell' }
+
+"Purescript
+Plug 'raichoo/purescript-vim'
+
+" Scala
+Plug 'derekwyatt/vim-scala'
 
 " Colorscheme
 Plug 'vim-scripts/wombat256.vim'
@@ -594,4 +601,8 @@ if filereadable(hvn_config_post)
   execute 'source '. hvn_config_post
 endif
 
+" }}}
+
+" Ack {{{
+let g:ackprg = 'ag --vimgrep'
 " }}}
